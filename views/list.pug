@@ -1,0 +1,15 @@
+extends layouts/layout
+
+block content
+  h1 List of Names
+  table
+    thead
+      tr
+        th Name
+        th Action
+    tbody
+      each item in items
+        tr
+          td #{item.name}
+          td
+            a(href='/delete-name/' + item.id class='btn btn-danger') Delete

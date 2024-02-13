@@ -1,0 +1,14 @@
+extends layouts/layout
+
+block content
+  h1 Welcome to the Home Page
+  form(action='/steve' method='get')
+    button(type='submit') Hello Steve
+  form(action='/weather' method='get')
+    button(type='submit') Weather
+  form(action='/chuck-norris' method='get')
+    button(type='submit') Chuck Norris
+  form(action='/list' method='get')
+    button(type='submit') Get list
+  form(action='/add-name' method='get')
+    button(type='submit') Add Name

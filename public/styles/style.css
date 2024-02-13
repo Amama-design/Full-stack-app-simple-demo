@@ -1,0 +1,140 @@
+/* Reset some default styles to have a clean base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding-left: 20px; 
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f8f8f8;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.delete-form button {
+    background-color: #d9534f;
+}
+
+.delete-form button:hover {
+    background-color: #c9302c;
+}
+
+form input[type="text"],
+form select {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="text"] {
+    width: calc(30% - 20px);
+}
+
+form select {
+    width: calc(20% - 20px);
+}
+
+.error {
+    color: #d9534f;
+}
+
+/* Update the form-group class if necessary to include a width */
+.form-group {
+    width: 100%; /* Set to limit the maximum width of the form elements, or remove if it's not necessary */
+    margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 33%; /* Adjust to desired width or keep it 100% to fill the container */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.error {
+  color: #d9534f;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+

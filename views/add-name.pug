@@ -1,0 +1,10 @@
+extends layouts/layout
+
+block content
+  h1 Add Name
+  
+  form(method='POST' action='/add-name')
+    input(type='text' placeholder='Enter a name' name='name' value=name required) 
+    button(type='submit') Add Name
+
+    
