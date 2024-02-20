@@ -26,6 +26,11 @@ app.get('/steve', function (req, res) {
   res.send('Hello Steve'); // Send a string to the page.
 });
 
+//AB added this
+app.get('/weather', function (req, res) {
+  res.send('The weather is cloudy Today'); // Send a string to the page.
+});
+
 app.get('/chuck-norris', async function(req, res) {
   try {
     const response = await axios.get('https://api.chucknorris.io/jokes/random');
